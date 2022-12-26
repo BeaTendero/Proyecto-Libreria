@@ -1,5 +1,6 @@
 //Importo funciones
 const express = require('express');
+const LibrosController = require('../controllers/LibrosController')
 const router = express.Router();
 const {middlewareBearer} = require('../middlewares/auth.js');
 
