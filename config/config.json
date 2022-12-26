@@ -12,8 +12,8 @@
     "password": "root",
     "database": "libreria",
     "host": "127.0.0.1",
-    "port":"3308",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port":"3308"
     
   },
   "production": {
