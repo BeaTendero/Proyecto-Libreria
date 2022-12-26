@@ -1,24 +1,39 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
+const {Model} = require('sequelize');
+const sequelize = require ('../db/db')
+
+class Users extends Model {};
+
 module.exports = (sequelize, DataTypes) => {
-  class Users extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
-    }
-  }
+  
   Users.init({
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING
+    email: {
+        type: DataTypes.STRING,
+        primaryKey: true,
+        validate: {
+            isEmail: true,
+            len: [1, 100]
+        },
+        allowNull: false
+    },
+    password: {
+        type: DataTypes.STRING,
+        validate: {
+            len: [1, 25]
+        }
+    },
+    userName: {
+        type: DataTypes.STRING,
+        validate: {
+            len: [1, 40]
+        }
+    },
+    rol: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Users',
+    freezeTableName: true,
+    timestamps: false
   });
   return Users;
-};
+}
