@@ -2,23 +2,27 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "database_development",
+    "database": "libreria",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "port" : "3308"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "root",
+    "database": "libreria",
     "host": "127.0.0.1",
+    "port":"3308",
     "dialect": "mysql"
+    
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
+    "password": "root",
+    "database": "libreria",
     "host": "127.0.0.1",
+    "port":"3308",
     "dialect": "mysql"
+
   }
 }
