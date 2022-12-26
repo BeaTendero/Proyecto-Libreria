@@ -1,5 +1,5 @@
-const config = requiere ("../config/config.json")
-const { Sequelize } = requiere('sequelize')
+const {Sequelize} = requiere('sequelize')
+const config = requiere ("../config/config.json");
 
 const sequelize = new Sequelize(
     config.development.database,
