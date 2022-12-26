@@ -6,7 +6,7 @@ const {middlewareBearer} = require('../middlewares/auth.js');
 //Importo modelo de datos
 const Controller = require('../controllers/LibrosController');
 
-// End-points CRUD movies
+// End-points CRUD libros
 router.get('/', LibrosController.getAll);
 router.get('/:id', LibrosController.getById);
 router.get('/name/:title', LibrosController.getByTitle);

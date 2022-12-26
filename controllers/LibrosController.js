@@ -11,7 +11,7 @@ const LibrosController = {}; //Create the object controller
 
 //CRUD end-points Functions
 //-------------------------------------------------------------------------------------
-//GET all movies from database
+//GET all libros database
 LibrosController.getAll = (req, res) => { //funciones propias de sequelize
     
   /// peticiones asincronas
@@ -30,7 +30,7 @@ LibrosController.getAll = (req, res) => { //funciones propias de sequelize
 
 
 //-------------------------------------------------------------------------------------
-//GET movies by Id from database
+//GET libros by Id from database
 LibrosController.getById = (req, res) => {
     const id = req.params.id;
 
@@ -164,7 +164,7 @@ LibrosController.delete = (req, res) => {
       truncate: false
     })
       .then(nums => {
-        res.send({ message: `${nums} Movies were deleted successfully!` });
+        res.send({ message: `${nums} Las películas se eliminaron con éxito!` });
       })
       .catch(err => {
         res.status(500).send({

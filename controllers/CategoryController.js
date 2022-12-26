@@ -20,7 +20,7 @@ CategoryController.getAll = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Some error occurred while retrieving categories."
+            err.message || "Se produjo un error al recuperar las categorías."
         });
       });
   };
@@ -37,13 +37,13 @@ CategoryController.getById = (req, res) => {
           res.send(data);
         } else {
           res.status(404).send({
-            message: `Cannot find Category with id=${id}.`
+            message: ` No se puede encontrar la categoría con id=${id}.`
           });
         }
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error retrieving categories with id=" + id
+          message: "Error al recuperar categorías con id=" + id
         });
       });
   };
@@ -55,7 +55,7 @@ CategoryController.create = (req, res) => {
     // Validate request
     if (!req.body.type) {
       res.status(400).send({
-        message: "Content can not be empty!"
+        message: "El contenido no puede estar vacío"
       });
       return;
     }
@@ -74,7 +74,7 @@ CategoryController.create = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Some error occurred while creating the newCategory."
+            err.message || "Se produjo un error al crear la nueva categoría."
         });
       });
   };
@@ -91,17 +91,17 @@ CategoryController.update = (req, res) => {
       .then(num => {
         if (num == 1) {
           res.send({
-            message: "Category was updated successfully."
+            message: "La categoría se actualizó con éxito."
           });
         } else {
           res.send({
-            message: `Cannot update Category with id=${id}. Maybe Movie was not found or req.body is empty!`
+            message: `No se puede actualizar la categoría con id=${id}. ¡Tal vez no se encontró la película o req.body está vacío!`
           });
         }
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error updating Category with id=" + id
+          message: "Error al actualizar la categoría con id=" + id
         });
       });
   };
@@ -118,7 +118,7 @@ CategoryController.getByType = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Some error occurred while retrieving categories."
+            err.message || "Se produjo un error al recuperar las categorías."
         });
       });
   };
@@ -135,17 +135,17 @@ CategoryController.delete = (req, res) => {
       .then(num => {
         if (num == 1) {
           res.send({
-            message: "Category was deleted successfully!"
+            message: "¡La categoría se eliminó con éxito!"
           });
         } else {
           res.send({
-            message: `Cannot delete Category with id=${id}. Maybe Movie was not found!`
+            message: `No se puede eliminar la categoría con id=${id}. ¡Quizás no se encontró el libro!`
           });
         }
       })
       .catch(err => {
         res.status(500).send({
-          message: "Could not delete Category with id=" + id
+          message: "No se pudo eliminar la categoría con id=" + id
         });
       });
   };
@@ -160,12 +160,13 @@ CategoryController.deleteAll = (req, res) => {
       truncate: false
     })
       .then(nums => {
-        res.send({ message: `${nums} categories were deleted successfully!` });
+        res.send({ message: `${nums} 
+        ¡Las categorías se eliminaron con éxito! ` });
       })
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Some error occurred while removing all categories."
+            err.message || "Se produjo un error al eliminar todas las categorías."
         });
       });
   };

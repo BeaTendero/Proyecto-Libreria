@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const {middlewareBearer} = require('../middlewares/auth.js');
+const {middlewareBearer} = require('../middlewares/auth');
 
 
-const LoansControllers = require('../controllers/LoansControllers')
+const PrestamosControllers = require('../controllers/PrestamosControllers')
 
-router.post('/create',middlewareBearer, PrestamosControllers.createLoan);
+router.post('/create',middlewareBearer, PrestamosControllers.createLibros);
 
 module.exports = router; 
