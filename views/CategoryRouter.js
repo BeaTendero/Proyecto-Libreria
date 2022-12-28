@@ -10,7 +10,7 @@ const auth = require('../middlewares/auth');
 // Policies
 const CategoryPolicy = require('../policies/CategoryPolicy');
 
-// End-points CRUD movies
+// End-points CRUD libros
 router.get('/',CategoryPolicy.getAll, CategoryController.getAll );
 router.get('/:id', CategoryController.getById);
 router.get('/type/:type',CategoryController.getByType);
