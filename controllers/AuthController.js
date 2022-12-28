@@ -1,28 +1,29 @@
-const { user } = require('../models/index');
+const { users } = require('../models/index');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth');
 const { log } = require('winston');
+const users = require('../models/users');
 
 const AuthController = {}; //Create the object controller
 
 //-------------------------------------------------------------------------------------
-//Login user with database
+//Login users with database
 //get user
 AuthController.signIn = (req, res) =>{
         let { email, password } = req.body;
         // Buscar usuario
-        user.findOne({ where: { email: email }
-        }).then(user => {
-            if (!user) {
+        users.findOne({ where: { email: email }
+        }).then(users => {
+            if (!users) {
                 res.status(404).json({ msg: "Usuario con este correo no encontrado" });
             } else {
-                if (bcrypt.compareSync(password, user.password)) {
+                if (bcrypt.compareSync(password, users.password)) {
                     // Creamos el token
-                    let token = jwt.sign({ user: user }, authConfig.secret);
+                    let token = jwt.sign({ users: users }, authConfig.secret);
 
                     res.json({
-                        user: user,
+                        users: users,
                         token: token
                     })
                 } else {
@@ -37,7 +38,7 @@ AuthController.signIn = (req, res) =>{
 
 
 //-------------------------------------------------------------------------------------
-//REGISTER new user in database
+//REGISTER new users in database
 //create user
 AuthController.signUp = (req, res)=> {
 
@@ -48,17 +49,17 @@ AuthController.signUp = (req, res)=> {
         console.log('--------------------------------------');
 
         // Crear un usuario
-        user.create({
+        users.create({
             name: req.body.name,
             email: req.body.email,
             password: password
-        }).then(user => {
+        }).then(users => {
 
             // Creamos el token
-            let token = jwt.sign({ user: user }, authConfig.secret);
+            let token = jwt.sign({users: users}, authConfig.secret);
 
             res.json({
-                users: user,
+                users: users,
                 token: token
             });
 

@@ -5,24 +5,30 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('clientes', [
       {
-        nombre: 'Bea',
+        name: 'Bea',
         email: 'Bea@gmail.com',
         password: '123456',
         createdAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
         updatedAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`
       },{
-        nombre: 'Jose Marin',
+        name: 'Jose Marin',
         email: 'JoseMarin@gmail.com',
         password: '123456',
         createdAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
         updatedAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`
       },{
-        nombre: 'Alicia',
+        name: 'Alicia',
         email: 'Alicia@gmail.com',
         password: '123456',
         createdAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
         updatedAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`
       },{
+        name: 'Ana',
+        email: 'Ana@gmail.com',
+        password: '123456',
+        createdAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`,
+        updatedAt: `${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDay()} ${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`
+    
       }
     ], {});
   },
