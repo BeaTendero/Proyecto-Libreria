@@ -8,6 +8,7 @@ const auth = require('./middlewares/auth');
 const UsersRouter = require('./views/UsersRouter');
 const LibrosRouter = require('./views/LibrosRouter');
 const PrestamosRouter = require('./views/PrestamosRouter');
+const CategoryRouter = require ('./views/CategoryRouter')
 
 //Rutas
 router.use('/api', UsersRouter); //Login and register routes

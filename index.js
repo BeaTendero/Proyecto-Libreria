@@ -1,3 +1,4 @@
+
 const express = require('express');
 const colors = require('colors');
 const morgan = require('morgan');
@@ -34,3 +35,5 @@ db.then(()=>{
         app.listen(PORT, ()=> console.log(`Server on port ${PORT}`.bgGreen.black));
     })
     .catch((err)=> console.log(err.message));   
+
+    

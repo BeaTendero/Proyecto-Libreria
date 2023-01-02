@@ -10,8 +10,8 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      fecha: {
-        type: Sequelize.STRING
+      fechaprestamo: {
+        type: Sequelize.DATE
       },
       id_producto: { //ponemos los nombres de los campos sin mas, no hay que expecificar la relacion aquí
         type: Sequelize.INTEGER
@@ -26,9 +26,23 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE
-      }
-    })
-     //con addConstraint, podemos añadir FK, PK y otros campos especiales, en caso de FK es con estas opciones
+      },
+      userId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Users',
+          key: 'id'
+        }
+      },
+      librosId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'libros',
+          key: 'id'
+        }
+      },
+  }),
+    //con addConstraint, podemos añadir FK, PK y otros campos especiales, en caso de FK es con estas opciones
     //importante que en los models tengamos las fk referenciadas como foreignKey en las relaciones
     await queryInterface.addConstraint('prestamos', {
       fields: ['id_producto'], //la columna en pedidos a la que afecta la FK
