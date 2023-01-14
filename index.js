@@ -1,6 +1,6 @@
 
 const express = require('express');
-const colors = require('colors');
+// const colors = require('colors');
 const morgan = require('morgan');
 const logger = require('./config/winston');
 const db = require('./db.js');
@@ -9,7 +9,7 @@ const cors = require ("cors")
 //   // Import cors module
 
 const app = express();
-const PORT = process.env.PORT || 3008; //Configuramos puerto 
+const PORT = process.env.PORT || 3306; //Configuramos puerto 
 
 //Config Cors Options
 var corsOptions = {

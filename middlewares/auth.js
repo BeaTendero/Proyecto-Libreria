@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth');
-const { users } = require('../models/index'); //incluyo users model
+const { user } = require('../models/index'); //incluyo user model
 
 // module.exports 
 
@@ -22,9 +22,9 @@ const middlewareBearer= (req, res, next) => {
                 res.status(500).json({ msg: "Ha ocurrido un problema al decodificar el token", err });
             } else {
                 
-                users.findByPk(decoded.users.id, { include: "roles" }).then(users => {
-                    //console.log(users.roles);
-                    req.users = users;
+                user.findByPk(decoded.user.id, { include: "roles" }).then(user => {
+                    //console.log(user.roles);
+                    req.user = user;
                     next();
                 });
             }

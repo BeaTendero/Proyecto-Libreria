@@ -30,7 +30,7 @@ module.exports = {
       userId: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'Users',
+          model: 'User',
           key: 'id'
         }
       },
@@ -57,12 +57,12 @@ module.exports = {
     })
 
     await queryInterface.addConstraint('prestamos', {
-      fields: ['id_users'],
+      fields: ['id_user'],
       type: 'foreign key',
-      name: 'id_users',
+      name: 'id_user',
       references: {
-        table: 'users',
-        field: 'id_users'
+        table: 'user',
+        field: 'id_user'
       },
       onDelete: 'cascade',
       onUpdate: 'cascade'

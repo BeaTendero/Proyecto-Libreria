@@ -1,29 +1,28 @@
-const { users } = require('../models/index');
+const { user } = require('../models/index');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth');
 const { log } = require('winston');
-const users = require('../models/users');
 
 const AuthController = {}; //Create the object controller
 
 //-------------------------------------------------------------------------------------
-//Login users with database
+//Login user with database
 //get user
 AuthController.signIn = (req, res) =>{
         let { email, password } = req.body;
         // Buscar usuario
-        users.findOne({ where: { email: email }
-        }).then(users => {
-            if (!users) {
+        user.findOne({ where: { email: email }
+        }).then(user => {
+            if (!user) {
                 res.status(404).json({ msg: "Usuario con este correo no encontrado" });
             } else {
-                if (bcrypt.compareSync(password, users.password)) {
+                if (bcrypt.compareSync(password, user.password)) {
                     // Creamos el token
-                    let token = jwt.sign({ users: users }, authConfig.secret);
+                    let token = jwt.sign({ user: user }, authConfig.secret);
 
                     res.json({
-                        users: users,
+                        user: user,
                         token: token
                     })
                 } else {
@@ -49,17 +48,17 @@ AuthController.signUp = (req, res)=> {
         console.log('--------------------------------------');
 
         // Crear un usuario
-        users.create({
+        user.create({
             name: req.body.name,
             email: req.body.email,
             password: password
-        }).then(users => {
+        }).then(user => {
 
             // Creamos el token
-            let token = jwt.sign({users: users}, authConfig.secret);
+            let token = jwt.sign({user: user}, authConfig.secret);
 
             res.json({
-                users: users,
+                user: user,
                 token: token
             });
 

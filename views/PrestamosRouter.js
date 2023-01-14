@@ -3,9 +3,6 @@ const PrestamosControllers = require ('../controllers/PrestamosController');
 const router = express.Router();
 const {middlewareBearer} = require('../middlewares/auth');
 
-
-const PrestamosControllers = require('../controllers/PrestamosControllers')
-
-router.post('/create',middlewareBearer, PrestamosControllers.createLibros);
+router.post('/create',middlewareBearer, PrestamosControllers.createPrestamos);
 
 module.exports = router; 

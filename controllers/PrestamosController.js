@@ -10,12 +10,12 @@ PrestamosControllers.createPrestamos = async (req, res) => {
 
     let resp = await prestamos.create({
         fechaprestamo: `${new Date().getFullYear()}-${new Date().getMonth() + 1}-${new Date().getDate()}`,
-        usersId: data.id_users,
+        userId: data.id_user,
         librosId: data.id_libros
     })
     res.status(200).json({
         resp,
-        user: data.id_users,
+        user: data.id_user,
         message: "Done"
     })
 

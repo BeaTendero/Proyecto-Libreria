@@ -2,11 +2,11 @@
 const {Model} = require('sequelize');
 const sequelize = require ('../db/db')
 
-class Users extends Model {};
+class user extends Model {};
 
 module.exports = (sequelize, DataTypes) => {
   
-  Users.init({
+  user.init({
     email: {
         type: DataTypes.STRING,
         primaryKey: true,
@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
             len: [1, 25]
         }
     },
-    usersName: {
+    user: {
         type: DataTypes.STRING,
         validate: {
             len: [1, 40]
@@ -31,9 +31,9 @@ module.exports = (sequelize, DataTypes) => {
     rol: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'Users',
+    modelName: 'user',
     freezeTableName: true,
     timestamps: false
   });
-  return Users;
+  return user;
 }
