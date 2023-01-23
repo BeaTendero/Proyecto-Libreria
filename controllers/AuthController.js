@@ -42,16 +42,16 @@ AuthController.signIn = (req, res) =>{
 AuthController.signUp = (req, res)=> {
 
         // Encriptamos la contraseña
-        let password = bcrypt.hashSync(req.body.password, Number.parseInt(authConfig.rounds));
-        console.log('--------------------------------------');
-        console.log(password);
-        console.log('--------------------------------------');
+        const passwordCrypted = bcrypt.hashSync(req.body.password, Number.parseInt(authConfig.rounds));
+        // console.log('--------------------------------------');
+        console.log(passwordCrypted);
+        // console.log('--------------------------------------');
 
         // Crear un usuario
         user.create({
             name: req.body.name,
             email: req.body.email,
-            password: password
+            password: passwordCrypted
         }).then(user => {
 
             // Creamos el token

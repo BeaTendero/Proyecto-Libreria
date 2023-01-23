@@ -15,7 +15,7 @@ const LibrosController = {}; //Create the object controller
 LibrosController.getAll = (req, res) => { //funciones propias de sequelize
     
   /// peticiones asincronas
-    libros.findAll({include: [{ model:categoryModel}]})
+    libros.findAll({})
       .then(data => {
         res.send(data);
       })

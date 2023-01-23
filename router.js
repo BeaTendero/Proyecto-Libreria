@@ -12,7 +12,7 @@ const CategoryRouter = require ('./views/CategoryRouter')
 
 //Rutas
 router.use('/api', UserRouter); //Login and register routes
-router.use('/Libros', LibrosRouter); //add auth
+router.use('/libros', LibrosRouter); //add auth
 router.use('/categories',CategoryRouter);
 router.use('/prestamos', PrestamosRouter)
 

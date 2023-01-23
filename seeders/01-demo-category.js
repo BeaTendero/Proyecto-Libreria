@@ -5,87 +5,87 @@ module.exports = {
   
       await queryInterface.bulkInsert('categories', [{
 
-      type: 'Autoayuda',
+      name: 'Autoayuda',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      type: 'Juvenil',
+      name: 'Juvenil',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-    type: 'Poesía',
+    name: 'Poesía',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      type: 'Videojuegos',
+      name: 'Videojuegos',
       createdAt: new Date(),
       updatedAt: new Date()
     },
     {
-      type: 'Animación',
+      name: 'Animación',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Cómic',
+        name: 'Cómic',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Novela',
+        name: 'Novela',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Novela gráfica',
+        name: 'Novela gráfica',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Autoestima',
+        name: 'Autoestima',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Diseño',
+        name: 'Diseño',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Crítica',
+        name: 'Crítica',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Literatura',
+        name: 'Literatura',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Diccionario',
+        name: 'Diccionario',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Ficción',
+        name: 'Ficción',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Novela de amor',
+        name: 'Novela de amor',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Manga',
+        name: 'Manga',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
-        type: 'Desarrollo personal',
+        name: 'Desarrollo personal',
         createdAt: new Date(),
         updatedAt: new Date()
       },
