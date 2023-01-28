@@ -22,8 +22,8 @@ const middlewareBearer= (req, res, next) => {
                 res.status(500).json({ msg: "Ha ocurrido un problema al decodificar el token", err });
             } else {
                 
-                users.findByPk(decoded.user.id, { include: "roles" }).then(users => {
-                    //console.log(user.roles);
+                users.findByPk(decoded.users.id, { include: "roles" }).then(users => {
+                    //console.log(users.roles);
                     req.users = users;
                     next();
                 });

@@ -17,12 +17,12 @@ AuthController.signIn = (req, res) =>{
             if (!users) {
                 res.status(404).json({ msg: "Usuario con este correo no encontrado" });
             } else {
-                if (bcrypt.compareSync(password, user.password)) {
+                if (bcrypt.compareSync(password, users.password)) {
                     // Creamos el token
-                    let token = jwt.sign({ user: users }, authConfig.secret);
+                    let token = jwt.sign({ users: users }, authConfig.secret);
 
                     res.json({
-                        user: user,
+                        users: users,
                         token: token
                     })
                 } else {
@@ -48,7 +48,7 @@ AuthController.signUp = (req, res)=> {
         // console.log('--------------------------------------');
 
         // Crear un usuario
-        user.create({
+        users.create({
             name: req.body.name,
             email: req.body.email,
             password: passwordCrypted
