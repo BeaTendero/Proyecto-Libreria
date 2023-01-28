@@ -3,6 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
+
     await queryInterface.createTable('Prestamos', {
       id_prestamo: {
         allowNull: false,
@@ -13,10 +14,10 @@ module.exports = {
       fechaprestamo: {
         type: Sequelize.DATE
       },
-      id_producto: { //ponemos los nombres de los campos sin mas, no hay que expecificar la relacion aquí
+      id_libros: { //ponemos los nombres de los campos sin mas, no hay que expecificar la relacion aquí
         type: Sequelize.INTEGER
       },
-      id_cliente: {
+      id_user: {
         type: Sequelize.INTEGER
       },
       createdAt: {
@@ -38,7 +39,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {
           model: 'libros',
-          key: 'id_producto'
+          key: 'id_libros'
         }
       },
   })

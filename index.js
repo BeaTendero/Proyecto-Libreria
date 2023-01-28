@@ -9,7 +9,7 @@ const cors = require ("cors")
 //   // Import cors module
 
 const app = express();
-const PORT = process.env.PORT || 3306; //Configuramos puerto 
+const PORT = process.env.PORT || 3000; //Configuramos puerto 
 
 //Config Cors Options
 var corsOptions = {

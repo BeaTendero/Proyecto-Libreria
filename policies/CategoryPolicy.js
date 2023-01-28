@@ -1,9 +1,9 @@
-const { user } = require('../models/index');
+const { users } = require('../models/index');
 
 module.exports = {
 
     getAll(req, res, next) {
-        if(user.isAdmin(req.user.roles)) {
+        if(users.isAdmin(req.users.roles)) {
             next();
         } else {
             res.status(401).json({ msg: "No estas autorizado para ver esta pulicacion" });
@@ -11,7 +11,7 @@ module.exports = {
     },
 
     create(req, res, next) {
-        if(user.isAdmin(req.user.roles)) {
+        if(users.isAdmin(req.users.roles)) {
             next();
         } else {
             res.status(401).json({ msg: "No estas autorizado para ver esta pulicacion" });
@@ -19,7 +19,7 @@ module.exports = {
     },
 
     update(req, res, next) {
-        if(user.isAdmin(req.user.roles)) {
+        if(users.isAdmin(req.users.roles)) {
             next();
         } else {
             res.status(401).json({ msg: "No estas autorizado para ver esta pulicacion" });
@@ -27,7 +27,7 @@ module.exports = {
     },
 
     deleteAll(req, res, next) {
-        if(user.isAdmin(req.user.roles)) {
+        if(users.isAdmin(req.users.roles)) {
             next();
         } else {
             res.status(401).json({ msg: "No estas autorizado para ver esta pulicacion" });
@@ -35,7 +35,7 @@ module.exports = {
     },
 
     delete(req, res, next) {
-        if(user.isAdmin(req.user.roles)) {
+        if(users.isAdmin(req.users.roles)) {
             next();
         } else {
             res.status(401).json({ msg: "No estas autorizado para ver esta pulicacion" });

@@ -2,11 +2,11 @@
 const {Model} = require('sequelize');
 const sequelize = require ('../db/db')
 
-class user extends Model {};
+class users extends Model {};
 
 module.exports = (sequelize, DataTypes) => {
   
-  user.init({
+  users.init({
     email: {
         type: DataTypes.STRING,
         primaryKey: true,
@@ -33,5 +33,5 @@ module.exports = (sequelize, DataTypes) => {
     freezeTableName: true,
     timestamps: false
   });
-  return user;
+  return users;
 }
