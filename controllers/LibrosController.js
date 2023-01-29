@@ -46,7 +46,7 @@ LibrosController.getById = (req, res) => {
       })
       .catch(err => {
         res.status(500).send({
-          message: "Error al recuperar películas con id=" + id
+          message: "Error al recuperar libros con id=" + id
         });
       });
   };
@@ -139,17 +139,17 @@ LibrosController.delete = (req, res) => {
       .then(num => {
         if (num == 1) {
           res.send({
-            message: "¡La película se eliminó con éxito!"
+            message: "¡El libro se eliminó con éxito!"
           });
         } else {
           res.send({
-            message: ` No se puede eliminar la película con id=${id}. ¡Quizás no se encontró la película!`
+            message: ` No se puede eliminar el libro con id=${id}. ¡Quizás no se encontró la película!`
           });
         }
       })
       .catch(err => {
         res.status(500).send({
-          message: "No se pudo eliminar la película con id=" + id
+          message: "No se pudo eliminar el libro con id=" + id
         });
       });
   };
@@ -164,12 +164,12 @@ LibrosController.delete = (req, res) => {
       truncate: false
     })
       .then(nums => {
-        res.send({ message: `${nums} Las películas se eliminaron con éxito!` });
+        res.send({ message: `${nums} Los libros se eliminaron con éxito!` });
       })
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Se produjo un error al eliminar todas las películas."
+            err.message || "Se produjo un error al eliminar todos los libros."
         });
       });
   };

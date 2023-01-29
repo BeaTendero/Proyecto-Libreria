@@ -11,7 +11,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'La ciudad de las bestias',
+      title: 'La ciudad de las bestias',
       autor: 'Isabel Allende',
       editorial:'Delbolsillo',
       category: 'Ficción',
@@ -22,7 +22,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Después de diciembre',
+      title: 'Después de diciembre',
       autor: 'Joana Marcus',
       editorial:'Montena',
       category: 'Novela de amor',
@@ -32,7 +32,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Cómo hacer que te pasen cosas buenas',
+      title: 'Cómo hacer que te pasen cosas buenas',
       autor: 'Marian Rojas Estapé',
       editorial:'Planeta',
       category:'Autoayuda y Desarrollo personal',
@@ -42,7 +42,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Kalathras',
+      title: 'Kalathras',
       autor: 'Eric Cuaresma',
       editorial:'Ediciones Martínez Roca',
       category:'Manga',
@@ -52,7 +52,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Manga, anime y videojuegos',
+      title: 'Manga, anime y videojuegos',
       autor: 'Manuel Hernández-Pérez',
       editorial:'Prensas De La Universidad De Zaragoza',
       category:'Expresiones artísticas del arte',
@@ -62,7 +62,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Detective Conan',
+      title: 'Detective Conan',
       autor: 'Gosho Aoyama',
       editorial:'Planeta De Agostini',
       category:'Manga',
@@ -72,7 +72,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Naruto',
+      title: 'Naruto',
       autor: 'Masashi Kishimoto',
       editorial:'Planeta Cómic',
       category:'Manga',
@@ -82,7 +82,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'My hero academia',
+      title: 'My hero academia',
       autor: 'Kohei Horikoshi',
       editorial:'Planeta De Agostini',
       category:'Manga',
@@ -92,7 +92,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'La noche que nos escuchamos',
+      title: 'La noche que nos escuchamos',
       autor: 'Albert Espinosa',
       editorial:'Grijalbo',
       category:'Novela',
@@ -102,7 +102,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'El mundo azul ama tu caos',
+      title: 'El mundo azul ama tu caos',
       autor: 'Albert Espinosa',
       editorial:'Debolsillo',
       category:'Ficción moderna y contemporánea',
@@ -112,7 +112,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'El mundo amarillo',
+      title: 'El mundo amarillo',
       autor: 'Albert Espinosa',
       editorial:'Grijalbo',
       category:'Motivación, Autoestima y actitud positiva',
@@ -122,7 +122,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Finales que merecen una historia',
+      title: 'Finales que merecen una historia',
       autor: 'Albert Espinosa',
       editorial:'Grijalbo',
       category:'Novela de amor',
@@ -131,7 +131,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Lo mejor de ir es volver',
+      title: 'Lo mejor de ir es volver',
       autor: 'Albert Espinosa',
       editorial:'Debolsillo',
       category:'Autoayuda y desarrollo personal',
@@ -140,7 +140,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Brújulas que buscan sonrisas perdidas',
+      title: 'Brújulas que buscan sonrisas perdidas',
       autor: 'Albert Espinosa',
       editorial:'Debolsillo',
       category:'Novelas de amor',
@@ -149,7 +149,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Herido diario',
+      title: 'Herido diario',
       autor: 'Rayden',
       editorial:'Aguilar',
       category:'Poesía',
@@ -158,7 +158,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Terminamos y otros poemas sin terminar',
+      title: 'Terminamos y otros poemas sin terminar',
       autor: 'Rayden',
       editorial:'Booket',
       category:'Poesía',
@@ -167,7 +167,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Nunca será siempre',
+      title: 'Nunca será siempre',
       autor: 'Rayden',
       editorial:'Destino Infantil & Juvenil',
       category:'Poesía',
@@ -176,7 +176,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'El mundo es un gato jugando con Australia',
+      title: 'El mundo es un gato jugando con Australia',
       autor: 'Rayden',
       editorial:'Planeta',
       category:'Poesía',
@@ -185,7 +185,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Vademécum del optimista',
+      title: 'Vademécum del optimista',
       autor: 'Bernabé Tierno',
       editorial:'Booket',
       category:'Autoayuda y desarrollo personal',
@@ -194,7 +194,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Enciclopedia Pokémon',
+      title: 'Enciclopedia Pokémon',
       autor: 'Libros De The Pokémon Company',
       editorial:'Monteana',
       category:'Animación',
@@ -203,7 +203,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Pokémon , Aprende a dibujar',
+      title: 'Pokémon , Aprende a dibujar',
       autor: 'Varios autores',
       editorial:'Montena',
       category:'Videojuegos y juegos de Ordenador',
@@ -212,7 +212,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Guía de los Pokémon de Alola',
+      title: 'Guía de los Pokémon de Alola',
       autor: 'Varios autores',
       editorial:'Montena',
       category:'Animación',
@@ -221,7 +221,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'El mundo de the witcher',
+      title: 'El mundo de the witcher',
       autor: 'Marcin Batylda',
       editorial:'Gustavo Gili',
       category:'Novela gráfica',
@@ -230,7 +230,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Batman. Un hèroe de videojuego',
+      title: 'Batman. Un hèroe de videojuego',
       autor: 'José L. Ortega',
       editorial:'Heroes De Papel',
       category:'Juegos de ordenador y en línea',
@@ -239,7 +239,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Tu vida, tu videojuego',
+      title: 'Tu vida, tu videojuego',
       autor: 'Rodrigo Río Del Arco',
       editorial:'Héroes De Papel',
       category:'Motivación, autoestima y actitud positiva',
@@ -248,7 +248,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Revolución Indie',
+      title: 'Revolución Indie',
       autor: 'Jonathan Leon - Manu Delgado',
       editorial:'Heroes De Papel',
       category:'Diseño de Juegos de Ordenador',
@@ -257,7 +257,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Guerreras princesas',
+      title: 'Guerreras princesas',
       autor: 'David Martinez',
       editorial:'Redbook',
       category:'Ciencia ficción',
@@ -266,7 +266,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Testing de videojuegos',
+      title: 'Testing de videojuegos',
       autor: 'Ricardo Izquierdo',
       editorial:'Ra-Ma',
       category:'Crítica literaria',
@@ -275,7 +275,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Estética en Videojuegos',
+      title: 'Estética en Videojuegos',
       autor: 'José Alberto Corbal',
       editorial:'Ra-Ma',
       category:' Programación de juegos',
@@ -284,7 +284,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Cine y Videojuegos',
+      title: 'Cine y Videojuegos',
       autor: 'Jose Maria Villalobos',
       editorial:'Heroes De Papel',
       category:'Cine y televisión',
@@ -293,7 +293,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Reina',
+      title: 'Reina',
       autor: 'Bebi Fernández',
       editorial:'Booket',
       category:'Novela',
@@ -302,7 +302,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Princesas y lobas',
+      title: 'Princesas y lobas',
       autor: 'Marta Mississippi',
       editorial:'Montena',
       category:'Literatura general',
@@ -311,7 +311,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Diccionario de Términos de Videojuegos',
+      title: 'Diccionario de Términos de Videojuegos',
       autor: 'Iván Ramírez Sánchez',
       editorial:'Verbum',
       category:'Diccionarios temáticos',
@@ -320,7 +320,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Yellowstar: Conviértete en un Campeón de League of Legends',
+      title: 'Yellowstar: Conviértete en un Campeón de League of Legends',
       autor: 'Bora Kim',
       editorial:'Planeta',
       category:'Videojuegos',
@@ -329,7 +329,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'League of Dragons (Temeraire)',
+      title: 'League of Dragons (Temeraire)',
       autor: 'Naomi Novik',
       editorial:'Del Rey',
       category:'Videojuegos',
@@ -338,7 +338,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Justice League Galaxy of Terrors',
+      title: 'Justice League Galaxy of Terrors',
       autor: 'Simon Spurrier; Aaron Lopresti',
       editorial:'Dc Comics',
       category:'Animación',
@@ -347,7 +347,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Memorias de una salvaje',
+      title: 'Memorias de una salvaje',
       autor: 'Bebi Fernández',
       editorial:'Planeta',
       category:'Ficción moderna y contemporánea',
@@ -356,7 +356,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Amor y asco',
+      title: 'Amor y asco',
       autor: 'Bebi Fernández',
       editorial:'Muevetulengua',
       category:'Poesía',
@@ -365,7 +365,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'El Poder de la Acción',
+      title: 'El Poder de la Acción',
       autor: 'Paulo Vieira',
       editorial:'Urano',
       category:'Motivación, Autoestima y Actitud positiva',
@@ -374,7 +374,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'El Trastorno Esquizofrénico de la Acción Humana',
+      title: 'El Trastorno Esquizofrénico de la Acción Humana',
       autor: 'Antonio Colodrón',
       editorial:'editorial Triacastela',
       category:'Psiquiatría',
@@ -383,7 +383,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Encuentra tu Persona Vitamina',
+      title: 'Encuentra tu Persona Vitamina',
       autor: 'Marian Rojas Estapé',
       editorial:'Espasa',
       category:'Autoayuda y Desarrollo Personal',
@@ -392,7 +392,7 @@ module.exports = {
     {
       createdAt: "2022-01-01",
       updatedAt: "2022-01-01",
-      titulo: 'Formacion y Orientacion Laboral 360º',
+      title: 'Formacion y Orientacion Laboral 360º',
       autor: 'Varios autores',
       editorial:'Editex, S.A.',
       category:'Ciencias económicas sobre finanzas',
